@@ -142,3 +142,25 @@ etudiants.forEach(function(etudiant){
 
     console.log(etudiant.nom + "a " + etudiant.age + "ans ")
 })
+
+console.log("let's access to the values of an array of objects \n ")
+console.log(etudiants[0].nom)
+console.log(etudiants[1].age)
+
+
+console.log("loop all elements of an array objects with the method for each \n")
+
+
+etudiants.forEach(function(etudiant){
+
+    console.log(etudiant.nom)
+})
+
+
+console.log("loop all elements of an array objects using the for loop ")
+
+
+for (let i = 0 ; i<etudiants.length ; i++){
+    console.log(etudiants[i].nom + "a " + etudiants[i].age )
+}
+
