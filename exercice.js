@@ -9,12 +9,47 @@ let stock = [
     { name: "Fridge", category: "Electronics", quantity: 5 }
 ]
 
-
 function totalItemByCategory(category){
 
-    return stock 
-    .filter(item=>item.category === category)
-    .reduce((total ,item)=> total + item.quantity, 0)
+    return stock
+    .filter(item => item.category === category )
+    .reduce((total , item) => total + item.quantity , 0)
+
 }
 
-console.log(totalItemByCategory("Electronics"))
+console.log(totalItemByCategory("Clothing"))
+
+
+
+
+console.log("function pour ajouter un produit")
+
+
+function restockItem(itemName,quantityToAdd){ 
+
+let item = stock.find(item => item.name === itemName); 
+
+if (item){
+    item.quantity += quantityToAdd
+}
+
+}
+
+restockItem("Laptop" , 1)
+
+console.log(stock[0].quantity)
+
+
+console.log("Function pour les articles  a stock faible ")
+
+function findLowStock(quantityOfStock){
+
+let lowStockItem = stock.filter(item => item.quantity <= quantityOfStock
+
+    
+)
+
+return lowStockItem
+
+}
+console.log(findLowStock(100))
