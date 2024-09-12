@@ -35,10 +35,3 @@ let stock = [
     { name: "Fridge", category: "Electronics", quantity: 5 }
 ]
 
-function totalItemByCategory(numberOfArticleOfCategory){
-
-    let stock = []
-
-    numberOfArticleOfCategory =  
-
-}
