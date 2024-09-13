@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="button">
+Clicker-moi 
+</button>
+
+
+<script>
+
+    const button = document.getElementById("button"); 
+
+
+    const nouveauDiv = document.createElement("div")
+
+    nouveauDiv.textContent = "Nouveau div crée"
+
+  document.body.appendChild(nouveauDiv)
+    button.addEventListener("click", function(event){
+    
+        console.log("Vous avez cliqué sur : ", event.target)
+    })
+</script>
+
+
+</body>
+</html>

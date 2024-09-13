@@ -4,6 +4,16 @@ h1{
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: #faebd7;
+    align-self: center;
 
 }
+
+
+  #addItemButton{
+    padding: 30;
+    background-color:lavender;
+    border-radius: 30;
+    margin: 20;
+    margin-top: 30;
+  }
