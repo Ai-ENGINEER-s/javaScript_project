@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Titre initial</h1>
+    <p id="paragraph">Ceci est un paragraphe.</p>
+    <button id="changeButton">Changer le contenu</button>
+  
+ <script>
+
+    document.getElementById('changeButton').addEventListener('click', function(){
+        document.getElementById('title').textContent = "Titre modifié du au javaScript "
+        document.getElementById('paragraph').textContent ='Le contenu a été modifié dynamiquement'
+    })
+ </script>
+
+
+  </body>
+</html>
