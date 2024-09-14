@@ -4,47 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Exercice 4 : To-Do List</h1>
-  <input type="text" id="tache" placeholder="Nouvelle tâche">
-  <button id="ajouter">Ajouter Tâche</button>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <input type="text" id="tache" placeholder="Nouvelle tâche">
+    <button id="ajouter">Ajouter Tâche</button>
 
-  <ul id="liste"></ul>
+    <ul id="liste"></ul>
+  </div>
 
-  <script>
-    const ajouterBouton = document.getElementById("ajouter");
-    const liste = document.getElementById("liste");
-    const inputTache = document.getElementById("tache");
-
-    ajouterBouton.addEventListener("click", function() {
-      const tacheTexte = inputTache.value;
-
-      if (tacheTexte === "") {
-        alert("Veuillez entrer une tâche.");
-        return;
-      }
-
-      const nouvelleTache = document.createElement("li");
-      nouvelleTache.textContent = tacheTexte;
-
-      const boutonTerminer = document.createElement("button");
-      boutonTerminer.textContent = "Terminé";
-      boutonTerminer.addEventListener("click", function() {
-        nouvelleTache.style.textDecoration = "line-through";
-      });
-
-      const boutonSupprimer = document.createElement("button");
-      boutonSupprimer.textContent = "Supprimer";
-      boutonSupprimer.addEventListener("click", function() {
-        liste.removeChild(nouvelleTache);
-      });
-
-      nouvelleTache.appendChild(boutonTerminer);
-      nouvelleTache.appendChild(boutonSupprimer);
-      liste.appendChild(nouvelleTache);
-      inputTache.value = "";  // Réinitialiser l'input
-    });
+  <script src="app.js">
+    
   </script>
 </body>
 </html>
