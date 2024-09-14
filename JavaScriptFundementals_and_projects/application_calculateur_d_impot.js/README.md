@@ -23,3 +23,5 @@ Pour exécuter l'application localement, assurez-vous d'avoir un navigateur mode
 1. Clonez ce dépôt sur votre machine locale.
    ```bash
    git clone https://github.com/votre-utilisateur/tax-calculator-app.git
+
+![Capture d'écran de l'application](tax_income_application.png)
