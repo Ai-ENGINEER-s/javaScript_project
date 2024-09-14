@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Our beautiful TODO application </h1>
+
+  <input type="text" name="" id="tache" placeholder="Enter your task">
+  <button id="taskButton">add a task</button>
+  <ol id="list">
+
+  </ol>
+
+
+  <script>
+
+
+
+ "retrive the value of iinput task"
+const tacheText = document.getElementById("tache")
+const taskButton = document.getElementById("taskButton")
+const list = document.getElementById("list")
+
+taskButton.addEventListener("click" , function(){
+
+ const  taskContent = tacheText.value 
+
+  const taskDiv = document.createElement('div')
+
+  const nouvelleTask = document.createElement('li')
+
+  taskDiv.textContent = taskContent
+  const boutonTerminé = document.createElement("button")
+  boutonTerminé.textContent = "Terminé"
+  const boutonSupprimé = document.createElement("button")
+  boutonSupprimé.textContent = "Supprimé"
+  taskDiv.classList.add("terminé");
+
+  boutonTerminé.addEventListener("click" , function(){
+    taskDiv.classList.toggle('terminé')
+  })
+
+  boutonSupprimé.addEventListener("click" , function(){
+    list.removeChild(nouvelleTask)
+  })
+
+  nouvelleTask.appendChild(taskDiv)
+  nouvelleTask.appendChild(boutonTerminé)
+  nouvelleTask.appendChild(boutonSupprimé)
+
+  list.appendChild(nouvelleTask)
+  taskContent.value =""
+
+
+})
+
+
+  
+
+
+  </script>
+</body>
+</html>

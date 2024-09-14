@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator Application </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Tax Calculator Application</h1>  
+    <br><br>
+  <h3>Enter your income to discover your taxt</h3>
+  <input type="text" placeholder="Enter your income to discover" id="incomeValue">
+
+  <button id="taxButton">calculate your tax </button>
+  <ul id="list">
+
+  </ul>
+  </div>
+<script >
+
+function calculateurtax(income){
+
+
+let   tax = 0.0 ;
+
+if(income <=10000){
+ 
+    console.log("And your tax is : " + {tax})
+}
+
+if(income>= 10001 && income <=30000 ) {
+
+tax = (income * 10) / 100
+
+
+console.log("And your tax is : " + {tax})
+}
+if (income >= 30001  && income<= 60000){
+
+    tax = (income * 20) / 100
+    
+    console.log("And your tax is : " + {tax})
+}
+if (income >=60001){
+
+    tax = (income * 30) / 100
+    
+    console.log("And your tax is : " + {tax})
+}
+
+
+return tax 
+
+
+}
+
+
+const incomeValue = document.getElementById("incomeValue")
+
+
+const taxBouton = document.getElementById("taxButton")
+
+const list = document.getElementById("list")
+
+taxBouton.addEventListener("click" , function(){
+
+let income =incomeValue.value
+
+if(income===""){
+    alert("Add your income before calculating your tax ");
+
+    return ; 
+}
+
+let tax = calculateurtax(income)
+
+
+const taxBalise = document.createElement('li')
+
+taxBalise.textContent = tax 
+
+const incomeBalise = document.createElement('li')
+
+incomeBalise.textContent = income 
+
+const nouvelleTaxIcome = document.createElement('li')
+
+
+nouvelleTaxIcome.appendChild(incomeBalise)
+nouvelleTaxIcome.appendChild(taxBalise)
+
+list.appendChild(nouvelleTaxIcome)
+
+incomeValue.value = ""
+
+
+})
+
+
+</script>
+
+</body>
+</html>
