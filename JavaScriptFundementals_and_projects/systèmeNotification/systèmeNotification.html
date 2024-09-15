@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notification</title>
+    <style>
+        #notification {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: yellow;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="notification">Ceci est une notification!</div>
+
+    <script>
+        function showNotification() {
+            let notification = document.getElementById("notification");
+            notification.style.display = "block";
+
+            // Faire disparaître la notification après 3 secondes
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 3000);
+        }
+
+        // Afficher la notification 5 secondes après le chargement de la page
+        setTimeout(showNotification, 5000);
+    </script>
+</body>
+</html>
