@@ -30,4 +30,17 @@ console.log(personnesAgées)
 
 // exercice avec reduce 
 
-console.log("Reduce exercice ")
+console.log("calculer le produit de tous les elements en utilisant reduce  ")
+
+
+
+const reduceTab = [1,2,3 , 4]
+
+const reduceAppliction = reduceTab.reduce((acc , currentValue)=> acc *currentValue)
+
+console.log(reduceAppliction)
+
+
+
+
+
