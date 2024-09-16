@@ -76,6 +76,34 @@ console.log( "reduce methode is to reduce an array to an one value by applying a
 
 
 
+const maxNumbers = [10, 9, 8, 7];
+
+
+
+const maxFunction = maxNumbers.reduce((acc , currentValue)=>{
+
+if (acc > currentValue){
+    return acc 
+}
+
+return currentValue 
+
+
+},maxNumbers[2])
+
+console.log(maxFunction)
+
+
+
+// find method in javaScript 
+
+console.log("find method with array in javaScript ")
+
+
+// syntax 
+
+// const result = array.find((element , index , array)=>{return true or false })
+
 
 
 
