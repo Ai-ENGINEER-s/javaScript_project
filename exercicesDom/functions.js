@@ -97,12 +97,64 @@ console.log(maxFunction)
 
 // find method in javaScript 
 
-console.log("find method with array in javaScript ")
+console.log("find method with array in javaScript . Find return the first element that accomplishes the condition ")
 
 
 // syntax 
 
 // const result = array.find((element , index , array)=>{return true or false })
+
+
+const users = [
+
+    {name: "alice" , age:25}, 
+    {name: "FHEOER" , age:28}, 
+    {name: "Barry" , age:26}
+
+]
+
+const foundUser = users.find((userAge =>userAge.age > 24))
+
+console.log(foundUser)
+
+
+// some and every 
+
+console.log("some method is used to check if an element satisfied the condition ")
+
+console.log("evey method verifies if all element satisfied the condition")
+
+// des exemples 
+
+
+
+
+const someNumbers = [1,2,3,4,5,6]; 
+
+const hasEven = numbers.some(num => num % 2 ===0 ); 
+
+console.log(hasEven)
+
+
+// every method 
+
+
+const everyList = [1, 2,4,6,8]
+
+const allEven = everyList.every(num=> num % 2 ===0)
+
+console.log(allEven)
+
+
+
+// forEach method 
+
+console.log("forEach method is used to execute a function on each element of the array ")
+
+const forEachArray = [ 1,2,3,4,5,6,8]
+
+forEachArray.forEach(num=>console.log(num**2))
+
 
 
 
