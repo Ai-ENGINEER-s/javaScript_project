@@ -14,4 +14,54 @@ console.log("Map method is used to create a new array by applying a function to 
 // const newArray = array.map((element , index , array)=> {return some value for new array })
 
 
-# 
+const existedTable  = [ 1,2,3,4,5,6,7,8,9]
+
+const squarredNumbersOfExistedTableUsingMapMethod =  existedTable.map((elementOfExistedTable, index,existedTable)=>{
+
+    if(index===2){
+        elementOfExistedTable *= elementOfExistedTable
+
+return elementOfExistedTable
+    
+    }else {    return elementOfExistedTable ; 
+
+    }
+
+
+
+}
+
+
+)
+
+console.log(squarredNumbersOfExistedTableUsingMapMethod + "\n")
+
+
+
+
+console.log("Filter method . In javaScript filter method is used to filter the elements of an array according to the creteria of the define function ")
+
+
+// syntax of filter method in javaScript 
+
+
+
+// const newArray = array.filter((element , index , array )=> {   return true or false })
+
+
+
+console.log("An example of filter method in javaScript ")
+
+const numbers = [ 5,6,8]
+
+const envenNumbers = numbers.filter((num)=>{
+
+    if(num % 2 ===0){
+        return num 
+    }
+    return ; 
+})
+
+console.log(envenNumbers)
+
+
