@@ -39,8 +39,9 @@ const reduceTab = [1,2,3 , 4]
 const reduceAppliction = reduceTab.reduce((acc , currentValue)=> acc *currentValue)
 
 console.log(reduceAppliction)
+const moduloTab = reduceTab.reduce((acc, currentValue) => acc + currentValue );
 
-
+console.log(moduloTab)
 
 
 

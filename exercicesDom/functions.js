@@ -145,18 +145,8 @@ const allEven = everyList.every(num=> num % 2 ===0)
 
 console.log(allEven)
 
-
-
 // forEach method 
 
 console.log("forEach method is used to execute a function on each element of the array ")
-
 const forEachArray = [ 1,2,3,4,5,6,8]
-
 forEachArray.forEach(num=>console.log(num**2))
-
-
-
-
-
-
