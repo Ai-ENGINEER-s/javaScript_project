@@ -65,3 +65,18 @@ const envenNumbers = numbers.filter((num)=>{
 console.log(envenNumbers)
 
 
+// Now let's see reduce () method applying to array 
+
+
+console.log( "reduce methode is to reduce an array to an one value by applying a cumulative function on the elements of the array \n")
+
+
+// const result =  array.reduce((accumulator , currentValue , index , array ))
+
+
+
+
+
+
+
+
