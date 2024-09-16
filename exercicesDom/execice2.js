@@ -3,12 +3,6 @@ numbers.forEach(num=>{
     console.log(num)
 })
 
-let tab1 =[89,45,12,785]
-
-tab1.forEach(tab1=>{
-    console.log("\n" , tab1)
-})
-
 
 
 
@@ -52,17 +46,21 @@ console.log("function flechées en javaScript ")
 const add = (a ,b )=>{return a+b }
 
 
-function Timer(){
-    this.seconds = 0;
-    setInterval(()=>{
-        this.seconds++;
-        console.log(this.seconds)
-    },10)
-}
+// function Timer(){
+//     this.seconds = 0;
+//     setInterval(()=>{
+//         this.seconds++;
+//         console.log(this.seconds)
+//     },10)
+// }
 
-const timer = new Timer()
-const squareNumbers =  numbers => {
-    squareNumbers**2
-}
+const squarredNumbers = numbers => numbers.map(n=>n*n)
 
-console.log(squareNumbers([1,2,3,4,]))
+console.log(squarredNumbers([1,2,3,4,5,6,7,8]))
+
+const filterNames =  names => names.filter(name=> name.startsWith('A'))
+
+console.log(filterNames(['Alice' , 'Bob' , 'Anna', 'John ']))
+
+const sumArray = numbers => numbers.reduce((acc, curr)=>acc+curr, 0)
+console.log(sumArray([1,7]))
